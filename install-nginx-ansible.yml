@@ -5,10 +5,11 @@
   
   tasks:
   - name: install nginx
-      yum:
-        name: nginx
-        state: install
+    yum:
+      name: nginx
+      state: install
   - name: start nginx  
-      service: nginx
+    service:
+      name: nginx
       state: started
     
