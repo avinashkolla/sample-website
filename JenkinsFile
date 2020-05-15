@@ -1,0 +1,21 @@
+node('master')
+
+stage('Git pull'){
+
+
+}
+
+stage('Docker build'){
+
+}
+
+stage('Docker push'){
+
+
+}
+
+stage('Docker run'){
+
+
+}
+
