@@ -1,7 +1,7 @@
 node('master')
 
 stage('Git pull'){
-	sh "echo 'Git pulled/cloned'
+	sh "echo 'Git pulled/cloned'"
 	sh "/opt/sample-website/JenkinsPipeline/gitpull.sh"
 
 }
