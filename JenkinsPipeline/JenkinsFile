@@ -1,0 +1,26 @@
+node('master')
+
+stage('Git pull'){
+	sh "echo 'Git pulled/cloned'
+	sh "/opt/sample-website/JenkinsPipeline/gitpull.sh"
+
+}
+
+stage('Docker build'){
+
+	sh "echo 'stage 2'"
+
+}
+
+stage('Docker push'){
+
+	sh "echo 'stage 3'"
+
+}
+
+stage('Docker run'){
+
+	sh "echo 'stage 4'"
+
+}
+
